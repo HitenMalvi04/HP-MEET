@@ -1,0 +1,116 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #00000000;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid #369eff66;
+    width: 14em;
+    height: 14em;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .form p {
+    color: #fff;
+    font-weight: lighter;
+  }
+  .form h2 {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .path {
+    fill: #369eff
+  }
+  
+  .svg {
+    filter: blur(20px);
+    z-index: -1;
+    position: absolute;
+    opacity: 50%;
+    animation: anim 3s infinite;
+  }
+  
+  .inp {
+    margin-left: auto;
+    margin-right: auto;
+    white-space: 4px;
+  }
+  
+  .input + .input {
+    margin-left: 0.3em
+  }
+  
+  .input {
+    color: #fff;
+    margin-top: 10px ;
+    height: 2em;
+    width: 10em;
+    float: left;
+    text-align: center;
+    background: #00000000;
+    outline: none;
+    border: 1px #369eff solid;
+    border-radius: 10px;
+    transition: all 0.6s ease;
+  }
+  
+  .input:focus {
+    outline: none;
+    border: 1px #fff solid;
+  }
+  
+  .input:not(:placeholder-shown) {
+    opacity: 40%
+  }
+  
+  .form button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00000000;
+    color: #fff;
+    width: 8.5em;
+    height: 2.3em;
+    border: #369eff 0.2em solid;
+    border-radius: 11px;
+    transition: all 0.5s ease;
+  }
+  
+  .form button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    border: #369eff 0.3em solid;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateY(-70px);
+    }
+  
+    50% {
+      transform: translateY(25px);
+    }
+  
+    100% {
+      transform: translateY(-70px);
+    }
+  }
+
+  .background {
+    background-color: black;
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
